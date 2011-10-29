@@ -4,7 +4,7 @@
 
 # SYNOPSIS
 
-    use Hackernews::Parser;
+    use WWW::Hackernews::Parser;
 
     my $top_hash_ref = hn_parse( 'top', '1' );
     # equivalent to:
@@ -22,7 +22,7 @@
 
 # DESCRIPTION
 
-The only subroutine of `Hackernews::Parser` is `hn_parse`. It takes the following arguments:
+The only subroutine of `WWW::Hackernews::Parser` is `hn_parse`. It takes the following arguments:
 
 1. **target** - This is what page to download the data from; is either `top` or `new`. Defaults to `top`.
 
@@ -74,5 +74,5 @@ I would like to give thanks to [telemachus](https://github.com/telemachus), [tor
 
 If you find a bug, file an issue on the project's Github page. If you have code to contribute, fork the repository and file a pull request. The URI is:
 
-<https://github.com/dbb/Hackernews-Parser/>
+<https://github.com/dbb/WWW-Hackernews/>
 
