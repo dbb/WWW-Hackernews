@@ -1,0 +1,11 @@
+Build.PL
+CHANGES
+hn_example.pl
+lib/WWW/Hackernews/Parser.pm
+LICENSE
+Makefile.PL
+MANIFEST
+META.yml
+t/pod.t
+t/pod_coverage.t
+t/test.t

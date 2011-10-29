@@ -1,0 +1,23 @@
+---
+name: WWW-Hackernews-Parser
+version: 0.01
+author:
+  - 'Daniel Bolton <dbb008@gmail.com>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  LWP::Simple: 6.00
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.01'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+no_index:
+  directory:
+    - inc
+requires:
+  perl: 5.10.0
+resources:
+  license: http://dev.perl.org/licenses/

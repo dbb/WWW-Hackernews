@@ -1,0 +1,6 @@
+0.1.1 (11-Oct-2011):
+ - Change namespace to WWW:Hackernews::Parser
+
+0.1 (10-Oct-2011):
+ - Initial CPAN upload
+
