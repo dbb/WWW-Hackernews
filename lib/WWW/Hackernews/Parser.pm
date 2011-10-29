@@ -51,7 +51,7 @@ sub hn_parse {
     \s+
     (hour|minute) # $9 age_unit
     (s)?\s+ago\s+\|\s*<a\s+href="item\?id=\g1">\s*
-    (\d+) # $12 -> comments
+    (\d+) # $11 -> comments
     \s+comment(s)?\s*</a>
         }ix
         )
@@ -65,7 +65,10 @@ sub hn_parse {
         $data->{ 'user' }     = $7;
         $data->{ 'age_qty' }  = $8;
         $data->{ 'age_unit' } = $9;
-        $data->{ 'comments' } = $12;
+        $data->{ 'comments' } = $11;
+
+        # for debugging purposes
+        $data->{'pattern'} = 1;
 
 
     } ## end if ( $html =~ m{ ) (})
@@ -110,6 +113,8 @@ sub hn_parse {
         $data->{ 'age_unit' } = $9;
         $data->{ 'comments' } = 0;
 
+        # for debugging purposes
+        $data->{'pattern'} = 2;
     } ## end elsif ( $html =~ m{ )  [ if ( $html =~ m{ ) (})](})
 
     elsif (
@@ -136,6 +141,8 @@ sub hn_parse {
         $data->{ 'age_qty' }  = $3;
         $data->{ 'age_unit' } = $4;
 
+        # for debugging purposes
+        $data->{'pattern'} = 3;
     } ## end elsif ( $html =~ m{ )  [ if ( $html =~ m{ ) (})](})
 
     else {
